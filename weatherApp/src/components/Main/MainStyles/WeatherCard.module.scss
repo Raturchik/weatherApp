@@ -1,0 +1,30 @@
+.weatherInfoCont {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  align-items: center;
+  text-align: left;
+
+  .weatherInfoWrapper {
+    width: 500px;
+    font-size: 20px;
+  }
+  .weatherInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    .rere {
+      display: flex;
+    }
+  }
+  .moreWeatherInfo {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.298);
+    width: 100%;
+    border-radius: 10px;
+    .column {
+      text-align: center;
+    }
+  }
+}
