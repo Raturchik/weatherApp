@@ -1,13 +1,12 @@
-import React from "react";
 import { UnitSelect } from "./UnitSelect";
 import { SearchBar } from "./SearchBar";
-import style from "./HeaderStyles/Header.module.scss";
+import styles from "./HeaderStyles/Header.module.scss";
 
-export const Header = () => {
+export const Header = ({ getPos }) => {
   return (
     <header>
       <UnitSelect />
-      <SearchBar />
+      <SearchBar getPos={getPos} />
     </header>
   );
 };

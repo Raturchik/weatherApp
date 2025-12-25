@@ -2,11 +2,43 @@ import React from "react";
 import style from "./MainStyles/DateDisplay.module.scss";
 
 export const DateDisplay = () => {
+  const week = [
+    "Monday",
+    "Tuesday",
+    "Wednsday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const todayDate = new Date();
+
+  const todayDay = todayDate.getDay();
+
+  const todayDayWeek = week[todayDate.getDay()];
+
+  const todayMonth = months[todayDate.getMonth()];
+
+  const todayYear = todayDate.getFullYear();
+
   return (
     <div className={style.display}>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-        laborum.
+        {todayDayWeek}, {todayMonth} {todayDay}, {todayYear}
       </p>
     </div>
   );

@@ -10,11 +10,17 @@
     font-size: 20px;
   }
   .weatherInfo {
-    display: flex;
-    justify-content: space-between;
-    font-size: 50px;
+    font-size: 45px;
+    .cityName {
+      font-size: 20px;
+    }
     .rere {
       display: flex;
+      justify-content: space-between;
+    }
+    .rotatedParagraph {
+      // transform: rotate(-90deg);
+      font-size: 20px;
     }
   }
   .moreWeatherInfo {

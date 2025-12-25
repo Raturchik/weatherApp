@@ -3,11 +3,11 @@ import { WeatherCard } from "./WeatherCard";
 import { DateDisplay } from "./DateDisplay";
 import style from "./MainStyles/MainStyles.module.scss";
 
-export const Main = () => {
+export const Main = ({ weatherData }) => {
   return (
     <main className={style.main}>
       <DateDisplay />
-      <WeatherCard />
+      <WeatherCard weatherData={weatherData} />
     </main>
   );
 };
