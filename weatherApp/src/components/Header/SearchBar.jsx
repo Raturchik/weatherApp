@@ -1,10 +1,14 @@
 import { useForm } from "react-hook-form";
 import style from "./HeaderStyles/SearchBar.module.scss";
+import { useContext } from "react";
+import { MainContext } from "../../App";
 
-export const SearchBar = ({ getPos }) => {
+export const SearchBar = () => {
   const { register, handleSubmit } = useForm();
 
-  const handleSubmitFunc = (data) => getPos(data.City);
+  const getPos = useContext(MainContext);
+
+  const handleSubmitFunc = (data) => getPos.getCityPosition(data.City);
   return (
     <div>
       <form

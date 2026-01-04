@@ -1,15 +1,14 @@
-import React from "react";
 import style from "./MainStyles/DateDisplay.module.scss";
 
 export const DateDisplay = () => {
   const week = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednsday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
   const months = [
     "January",
@@ -27,7 +26,7 @@ export const DateDisplay = () => {
   ];
   const todayDate = new Date();
 
-  const todayDay = todayDate.getDay();
+  const todayDay = todayDate.getDate();
 
   const todayDayWeek = week[todayDate.getDay()];
 
